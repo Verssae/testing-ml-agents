@@ -1,0 +1,65 @@
+{
+    "Pyramids": {
+        "checkpoints": [
+            {
+                "steps": 6499907,
+                "file_path": "results\\findCube\\Pyramids\\Pyramids-6499907.onnx",
+                "reward": null,
+                "creation_time": 1635370893.6250856,
+                "auxillary_file_paths": [
+                    "results\\findCube\\Pyramids\\Pyramids-6499907.pt"
+                ]
+            },
+            {
+                "steps": 6999920,
+                "file_path": "results\\findCube\\Pyramids\\Pyramids-6999920.onnx",
+                "reward": 0.00039970874786376953,
+                "creation_time": 1635372277.9549003,
+                "auxillary_file_paths": [
+                    "results\\findCube\\Pyramids\\Pyramids-6999920.pt"
+                ]
+            },
+            {
+                "steps": 7499893,
+                "file_path": "results\\findCube\\Pyramids\\Pyramids-7499893.onnx",
+                "reward": null,
+                "creation_time": 1635374534.7672145,
+                "auxillary_file_paths": [
+                    "results\\findCube\\Pyramids\\Pyramids-7499893.pt"
+                ]
+            },
+            {
+                "steps": 7999988,
+                "file_path": "results\\findCube\\Pyramids\\Pyramids-7999988.onnx",
+                "reward": null,
+                "creation_time": 1635376724.7404892,
+                "auxillary_file_paths": [
+                    "results\\findCube\\Pyramids\\Pyramids-7999988.pt"
+                ]
+            },
+            {
+                "steps": 8399084,
+                "file_path": "results\\findCube\\Pyramids\\Pyramids-8399084.onnx",
+                "reward": null,
+                "creation_time": 1635378648.0558877,
+                "auxillary_file_paths": [
+                    "results\\findCube\\Pyramids\\Pyramids-8399084.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 8399084,
+            "file_path": "results\\findCube\\Pyramids.onnx",
+            "reward": null,
+            "creation_time": 1635378648.0558877,
+            "auxillary_file_paths": [
+                "results\\findCube\\Pyramids\\Pyramids-8399084.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.27.0",
+        "torch_version": "1.10.0+cu113"
+    }
+}

@@ -1,0 +1,65 @@
+{
+    "Pyramids": {
+        "checkpoints": [
+            {
+                "steps": 8499958,
+                "file_path": "results\\thirdFindCube\\Pyramids\\Pyramids-8499958.onnx",
+                "reward": -0.9996667181452116,
+                "creation_time": 1635540906.6395397,
+                "auxillary_file_paths": [
+                    "results\\thirdFindCube\\Pyramids\\Pyramids-8499958.pt"
+                ]
+            },
+            {
+                "steps": 8999961,
+                "file_path": "results\\thirdFindCube\\Pyramids\\Pyramids-8999961.onnx",
+                "reward": -0.9994000494480133,
+                "creation_time": 1635541479.529977,
+                "auxillary_file_paths": [
+                    "results\\thirdFindCube\\Pyramids\\Pyramids-8999961.pt"
+                ]
+            },
+            {
+                "steps": 9499996,
+                "file_path": "results\\thirdFindCube\\Pyramids\\Pyramids-9499996.onnx",
+                "reward": null,
+                "creation_time": 1635542050.9705174,
+                "auxillary_file_paths": [
+                    "results\\thirdFindCube\\Pyramids\\Pyramids-9499996.pt"
+                ]
+            },
+            {
+                "steps": 9999984,
+                "file_path": "results\\thirdFindCube\\Pyramids\\Pyramids-9999984.onnx",
+                "reward": null,
+                "creation_time": 1635542627.440403,
+                "auxillary_file_paths": [
+                    "results\\thirdFindCube\\Pyramids\\Pyramids-9999984.pt"
+                ]
+            },
+            {
+                "steps": 10000112,
+                "file_path": "results\\thirdFindCube\\Pyramids\\Pyramids-10000112.onnx",
+                "reward": null,
+                "creation_time": 1635542627.522422,
+                "auxillary_file_paths": [
+                    "results\\thirdFindCube\\Pyramids\\Pyramids-10000112.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 10000112,
+            "file_path": "results\\thirdFindCube\\Pyramids.onnx",
+            "reward": null,
+            "creation_time": 1635542627.522422,
+            "auxillary_file_paths": [
+                "results\\thirdFindCube\\Pyramids\\Pyramids-10000112.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.27.0",
+        "torch_version": "1.10.0+cu113"
+    }
+}

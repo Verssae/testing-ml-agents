@@ -1,0 +1,47 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1635573502",
+        "python_version": "3.7.9 (tags/v3.7.9:13c94747c7, Aug 17 2020, 18:58:18) [MSC v.1900 64 bit (AMD64)]",
+        "command_line_arguments": "C:\\Users\\tiger\\.virtualenvs\\ml-agents-release_18-MMamAcHs\\Scripts\\mlagents-learn",
+        "mlagents_version": "0.27.0",
+        "mlagents_envs_version": "0.27.0",
+        "communication_protocol_version": "1.5.0",
+        "pytorch_version": "1.10.0+cu113",
+        "numpy_version": "1.21.3",
+        "end_time_seconds": "1635573505"
+    },
+    "total": 2.8109428000000003,
+    "count": 1,
+    "self": 0.002285999999999788,
+    "children": {
+        "run_training.setup": {
+            "total": 0.0953759999999999,
+            "count": 1,
+            "self": 0.0953759999999999
+        },
+        "TrainerController.start_learning": {
+            "total": 2.7132808000000006,
+            "count": 1,
+            "self": 0.00031369999999952825,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 2.7129585,
+                    "count": 1,
+                    "self": 2.7129585
+                },
+                "trainer_threads": {
+                    "total": 1.2000000007006406e-06,
+                    "count": 1,
+                    "self": 1.2000000007006406e-06
+                },
+                "TrainerController._save_models": {
+                    "total": 7.400000000323814e-06,
+                    "count": 1,
+                    "self": 7.400000000323814e-06
+                }
+            }
+        }
+    }
+}
