@@ -100,6 +100,7 @@ public class PyramidAgent : Agent
         {
             sensor.AddObservation(m_SwitchLogic.GetState());
             sensor.AddObservation(transform.InverseTransformDirection(m_AgentRb.velocity));
+            sensor.AddObservation(DoGroundCheck());
         }
     }
 
@@ -176,7 +177,7 @@ public class PyramidAgent : Agent
     public override void OnActionReceived(ActionBuffers actionBuffers)
 
     {
-        AddReward(-1f / MaxStep);
+        //AddReward(-1f / MaxStep);
         MoveAgent(actionBuffers.DiscreteActions);
         AddPoint();
     }
@@ -225,14 +226,14 @@ public class PyramidAgent : Agent
 
         if (collision.gameObject.CompareTag("goal"))
         {
-            SetReward(2f);
+            AddReward(2f);
             goalPaths.AddPath(Points);
             EndEpisode();
         }
-
+        
         if (collision.gameObject.CompareTag("switchOff"))
         {
-            AddReward(0.5f);
+            AddReward(1f);
         }
 
         if (collision.gameObject.CompareTag("bound"))

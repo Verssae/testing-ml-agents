@@ -1,0 +1,65 @@
+{
+    "KSC_RND": {
+        "checkpoints": [
+            {
+                "steps": 1499948,
+                "file_path": "results\\KSC_RND_2\\KSC_RND\\KSC_RND-1499948.onnx",
+                "reward": 0.0,
+                "creation_time": 1637659076.7728367,
+                "auxillary_file_paths": [
+                    "results\\KSC_RND_2\\KSC_RND\\KSC_RND-1499948.pt"
+                ]
+            },
+            {
+                "steps": 1999887,
+                "file_path": "results\\KSC_RND_2\\KSC_RND\\KSC_RND-1999887.onnx",
+                "reward": null,
+                "creation_time": 1637659851.2468388,
+                "auxillary_file_paths": [
+                    "results\\KSC_RND_2\\KSC_RND\\KSC_RND-1999887.pt"
+                ]
+            },
+            {
+                "steps": 2499951,
+                "file_path": "results\\KSC_RND_2\\KSC_RND\\KSC_RND-2499951.onnx",
+                "reward": 0.0,
+                "creation_time": 1637660575.4206643,
+                "auxillary_file_paths": [
+                    "results\\KSC_RND_2\\KSC_RND\\KSC_RND-2499951.pt"
+                ]
+            },
+            {
+                "steps": 2999934,
+                "file_path": "results\\KSC_RND_2\\KSC_RND\\KSC_RND-2999934.onnx",
+                "reward": null,
+                "creation_time": 1637661309.75471,
+                "auxillary_file_paths": [
+                    "results\\KSC_RND_2\\KSC_RND\\KSC_RND-2999934.pt"
+                ]
+            },
+            {
+                "steps": 3000022,
+                "file_path": "results\\KSC_RND_2\\KSC_RND\\KSC_RND-3000022.onnx",
+                "reward": 0.0,
+                "creation_time": 1637661309.852709,
+                "auxillary_file_paths": [
+                    "results\\KSC_RND_2\\KSC_RND\\KSC_RND-3000022.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 3000022,
+            "file_path": "results\\KSC_RND_2\\KSC_RND.onnx",
+            "reward": 0.0,
+            "creation_time": 1637661309.852709,
+            "auxillary_file_paths": [
+                "results\\KSC_RND_2\\KSC_RND\\KSC_RND-3000022.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.27.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}

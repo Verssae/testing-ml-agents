@@ -1,0 +1,56 @@
+{
+    "KSC_RND": {
+        "checkpoints": [
+            {
+                "steps": 499876,
+                "file_path": "results\\KSC_RND_3\\KSC_RND\\KSC_RND-499876.onnx",
+                "reward": 0.25,
+                "creation_time": 1637667479.1449003,
+                "auxillary_file_paths": [
+                    "results\\KSC_RND_3\\KSC_RND\\KSC_RND-499876.pt"
+                ]
+            },
+            {
+                "steps": 999972,
+                "file_path": "results\\KSC_RND_3\\KSC_RND\\KSC_RND-999972.onnx",
+                "reward": 0.0,
+                "creation_time": 1637668125.2356923,
+                "auxillary_file_paths": [
+                    "results\\KSC_RND_3\\KSC_RND\\KSC_RND-999972.pt"
+                ]
+            },
+            {
+                "steps": 1499940,
+                "file_path": "results\\KSC_RND_3\\KSC_RND\\KSC_RND-1499940.onnx",
+                "reward": null,
+                "creation_time": 1637668774.3486502,
+                "auxillary_file_paths": [
+                    "results\\KSC_RND_3\\KSC_RND\\KSC_RND-1499940.pt"
+                ]
+            },
+            {
+                "steps": 1999908,
+                "file_path": "results\\KSC_RND_3\\KSC_RND\\KSC_RND-1999908.onnx",
+                "reward": null,
+                "creation_time": 1637669422.6741092,
+                "auxillary_file_paths": [
+                    "results\\KSC_RND_3\\KSC_RND\\KSC_RND-1999908.pt"
+                ]
+            },
+            {
+                "steps": 2499911,
+                "file_path": "results\\KSC_RND_3\\KSC_RND\\KSC_RND-2499911.onnx",
+                "reward": null,
+                "creation_time": 1637670074.6881967,
+                "auxillary_file_paths": [
+                    "results\\KSC_RND_3\\KSC_RND\\KSC_RND-2499911.pt"
+                ]
+            }
+        ]
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.27.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}

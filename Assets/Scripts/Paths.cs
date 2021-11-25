@@ -10,6 +10,7 @@ public class Paths : MonoBehaviour
     public List<Trajectory> trajectories;
     public GameObject liner;
     public bool isTest;
+    public bool showAll;
     public string tg;
 
     int index;
@@ -52,7 +53,7 @@ public class Paths : MonoBehaviour
 
     private void Start()
     {
-        if (isTest)
+        if (isTest && showAll)
         {
             Load();
             Debug.Log(trajectories.Count);
@@ -60,9 +61,12 @@ public class Paths : MonoBehaviour
             {
                 DrawLines(i);
             }
-            //DrawLines(index);
+            
         }
-        
+        else if (isTest && !showAll)
+        {
+            DrawLines(index);
+        }
     }
 
 
@@ -77,7 +81,11 @@ public class Paths : MonoBehaviour
 
     public void Save()
     {
-        FileManager.SavePaths(Data, tg);
+        if (!isTest)
+        {
+            FileManager.SavePaths(Data, tg);
+        }
+        
     }
 
     public void Load()

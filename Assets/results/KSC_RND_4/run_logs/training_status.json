@@ -1,0 +1,47 @@
+{
+    "KSC_RND": {
+        "checkpoints": [
+            {
+                "steps": 499978,
+                "file_path": "results\\KSC_RND_4\\KSC_RND\\KSC_RND-499978.onnx",
+                "reward": 0.0,
+                "creation_time": 1637680665.2961085,
+                "auxillary_file_paths": [
+                    "results\\KSC_RND_4\\KSC_RND\\KSC_RND-499978.pt"
+                ]
+            },
+            {
+                "steps": 999946,
+                "file_path": "results\\KSC_RND_4\\KSC_RND\\KSC_RND-999946.onnx",
+                "reward": 0.0,
+                "creation_time": 1637681354.4264023,
+                "auxillary_file_paths": [
+                    "results\\KSC_RND_4\\KSC_RND\\KSC_RND-999946.pt"
+                ]
+            },
+            {
+                "steps": 1000202,
+                "file_path": "results\\KSC_RND_4\\KSC_RND\\KSC_RND-1000202.onnx",
+                "reward": 0.0,
+                "creation_time": 1637681354.5434148,
+                "auxillary_file_paths": [
+                    "results\\KSC_RND_4\\KSC_RND\\KSC_RND-1000202.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 1000202,
+            "file_path": "results\\KSC_RND_4\\KSC_RND.onnx",
+            "reward": 0.0,
+            "creation_time": 1637681354.5434148,
+            "auxillary_file_paths": [
+                "results\\KSC_RND_4\\KSC_RND\\KSC_RND-1000202.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.27.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}
