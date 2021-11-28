@@ -14,10 +14,8 @@ public class LinePath : MonoBehaviour
     void Awake()
     {
         line = GetComponent<LineRenderer>();
+        points = new List<Vector3>();
         line.enabled = false;
-        line.startColor = lineColor;
-        line.startColor = lineColor;
-        Show();
     }
 
     public void Show()
@@ -32,7 +30,7 @@ public class LinePath : MonoBehaviour
     }
 
     public void ShowOff()
-    {
+    { 
         line.enabled = false;
     }
 

@@ -1,0 +1,56 @@
+{
+    "KSC_BC": {
+        "checkpoints": [
+            {
+                "steps": 6999977,
+                "file_path": "results\\NewKSCBC\\KSC_BC\\KSC_BC-6999977.onnx",
+                "reward": null,
+                "creation_time": 1638061258.6869237,
+                "auxillary_file_paths": [
+                    "results\\NewKSCBC\\KSC_BC\\KSC_BC-6999977.pt"
+                ]
+            },
+            {
+                "steps": 7499903,
+                "file_path": "results\\NewKSCBC\\KSC_BC\\KSC_BC-7499903.onnx",
+                "reward": -0.9997500702738762,
+                "creation_time": 1638064145.3100343,
+                "auxillary_file_paths": [
+                    "results\\NewKSCBC\\KSC_BC\\KSC_BC-7499903.pt"
+                ]
+            },
+            {
+                "steps": 7999887,
+                "file_path": "results\\NewKSCBC\\KSC_BC\\KSC_BC-7999887.onnx",
+                "reward": -0.999500073492527,
+                "creation_time": 1638067338.2090414,
+                "auxillary_file_paths": [
+                    "results\\NewKSCBC\\KSC_BC\\KSC_BC-7999887.pt"
+                ]
+            },
+            {
+                "steps": 8499942,
+                "file_path": "results\\NewKSCBC\\KSC_BC\\KSC_BC-8499942.onnx",
+                "reward": -0.9992500692605972,
+                "creation_time": 1638071782.6789138,
+                "auxillary_file_paths": [
+                    "results\\NewKSCBC\\KSC_BC\\KSC_BC-8499942.pt"
+                ]
+            },
+            {
+                "steps": 8999955,
+                "file_path": "results\\NewKSCBC\\KSC_BC\\KSC_BC-8999955.onnx",
+                "reward": -0.37243756651878357,
+                "creation_time": 1638077078.650378,
+                "auxillary_file_paths": [
+                    "results\\NewKSCBC\\KSC_BC\\KSC_BC-8999955.pt"
+                ]
+            }
+        ]
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.27.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}

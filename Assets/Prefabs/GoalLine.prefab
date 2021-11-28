@@ -44,12 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14ced6fd5071c9f4b919f38f2065ffc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  points:
-  - {x: 0, y: 0, z: 1}
-  - {x: 0, y: 1, z: 2}
-  - {x: 0, y: 3, z: 4}
-  - {x: 4, y: 0, z: 6}
-  - {x: 0, y: 0, z: 4}
+  points: []
   lineColor: {r: 1, g: 0, b: 0, a: 0}
   startSphere: {fileID: 7800327305520088523, guid: e083a15b730b0e64fbc950648a6b79f5, type: 3}
   endSphere: {fileID: 7800327305520088523, guid: 290464772d30d0c4ca1abed2cd91cce1, type: 3}
@@ -72,7 +67,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: df32cc593804f42df97464dc455057b8, type: 2}
+  - {fileID: 2100000, guid: 5c59bd36def9a4684be49a21cf201a2d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -114,7 +109,7 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 1, g: 1, b: 1, a: 1}
+      key0: {r: 0, g: 0, b: 0, a: 1}
       key1: {r: 1, g: 1, b: 1, a: 1}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}

@@ -8,6 +8,8 @@ public class Elevator : MonoBehaviour
     public float speed = 2f;
     public float haltTime = 3f;
 
+    public GameObject map;
+
     Vector3 bottomPos, topPos;
     bool isMoving = false;
     bool isMovingDown = false;
@@ -78,7 +80,7 @@ public class Elevator : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("agent"))
         {
-            collision.transform.parent = null;
+            collision.transform.parent = map.transform;
         }
     }
 }

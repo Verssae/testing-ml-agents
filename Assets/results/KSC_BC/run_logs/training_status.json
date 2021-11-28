@@ -1,0 +1,65 @@
+{
+    "KSC_BC": {
+        "checkpoints": [
+            {
+                "steps": 999936,
+                "file_path": "results\\KSC_BC\\KSC_BC\\KSC_BC-999936.onnx",
+                "reward": null,
+                "creation_time": 1637945381.140219,
+                "auxillary_file_paths": [
+                    "results\\KSC_BC\\KSC_BC\\KSC_BC-999936.pt"
+                ]
+            },
+            {
+                "steps": 1254889,
+                "file_path": "results\\KSC_BC\\KSC_BC\\KSC_BC-1254889.onnx",
+                "reward": -0.024828126250213245,
+                "creation_time": 1637949283.5523155,
+                "auxillary_file_paths": [
+                    "results\\KSC_BC\\KSC_BC\\KSC_BC-1254889.pt"
+                ]
+            },
+            {
+                "steps": 1267053,
+                "file_path": "results\\KSC_BC\\KSC_BC\\KSC_BC-1267053.onnx",
+                "reward": null,
+                "creation_time": 1637978916.3615816,
+                "auxillary_file_paths": [
+                    "results\\KSC_BC\\KSC_BC\\KSC_BC-1267053.pt"
+                ]
+            },
+            {
+                "steps": 1499893,
+                "file_path": "results\\KSC_BC\\KSC_BC\\KSC_BC-1499893.onnx",
+                "reward": 1.3182500004768372,
+                "creation_time": 1637981246.079206,
+                "auxillary_file_paths": [
+                    "results\\KSC_BC\\KSC_BC\\KSC_BC-1499893.pt"
+                ]
+            },
+            {
+                "steps": 1815266,
+                "file_path": "results\\KSC_BC\\KSC_BC\\KSC_BC-1815266.onnx",
+                "reward": -0.43856252996920375,
+                "creation_time": 1637984995.0881228,
+                "auxillary_file_paths": [
+                    "results\\KSC_BC\\KSC_BC\\KSC_BC-1815266.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 1815266,
+            "file_path": "results\\KSC_BC\\KSC_BC.onnx",
+            "reward": -0.43856252996920375,
+            "creation_time": 1637984995.0881228,
+            "auxillary_file_paths": [
+                "results\\KSC_BC\\KSC_BC\\KSC_BC-1815266.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.27.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}

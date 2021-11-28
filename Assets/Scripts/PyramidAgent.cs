@@ -35,63 +35,26 @@ public class PyramidAgent : Agent
     public Collider[] hitGroundColliders = new Collider[5];
 
     [Header("Trajectory Setting")]
-    public Paths goalPaths;
-    public Paths boundPaths;
     public float minDist = 0.1f;
-    List<Vector3> points;
-    public Vector3 lastPoint
-    {
-        get
-        {
-            if (points == null)
-            {
-                return Vector3.zero;
-            }
-            return points[points.Count - 1];
-        }
-    }
+    public bool record = true;
+
+    Line path;
+    //Tape goals;
+    Tape bounds;
 
     Vector3 m_JumpTargetPos;
     Vector3 m_JumpStartingPos;
 
-    void AddPoint()
-    {
-        Vector3 pt = transform.position;
-        if (points.Count > 0 && (pt - lastPoint).magnitude < minDist)
-        {
-            return;
-        }
-
-        points.Add(pt);
-    }
-
-    void ClearPoint()
-    {
-        points.Clear();
-    }
-
-    float[] Vector3ToFloats(Vector3 pt)
-    {
-        return Enumerable.Range(0, 3).Select(i => pt[i]).ToArray();
-    }
-
-    public float[][] Points
-    {
-        get
-        {
-            return points.Select(x => Vector3ToFloats(x)).ToArray();
-            
-        }
-    }
 
     public override void Initialize()
     {
         m_AgentRb = GetComponent<Rigidbody>();
         m_MyArea = area.GetComponent<PyramidArea>();
         m_SwitchLogic = areaSwitch.GetComponent<PyramidSwitch>();
-        points = new List<Vector3>();
-        goalPaths = GameObject.Find("GoalPaths").GetComponent<Paths>();
-        boundPaths = GameObject.Find("BoundPaths").GetComponent<Paths>();
+
+        path = new Line(minDist);
+        //goals = GameObject.Find("Goals").GetComponent<Tape>();
+        bounds = GameObject.Find("Bounds").GetComponent<Tape>();
     }
 
     public override void CollectObservations(VectorSensor sensor)
@@ -177,9 +140,9 @@ public class PyramidAgent : Agent
     public override void OnActionReceived(ActionBuffers actionBuffers)
 
     {
-        //AddReward(-1f / MaxStep);
+        AddReward(-1f / MaxStep);
         MoveAgent(actionBuffers.DiscreteActions);
-        AddPoint();
+        path.Add(transform.localPosition);
     }
 
     public override void Heuristic(in ActionBuffers actionsOut)
@@ -207,17 +170,16 @@ public class PyramidAgent : Agent
 
     public override void OnEpisodeBegin()
     {
-        var enumerable = Enumerable.Range(0, 7).OrderBy(x => Guid.NewGuid()).Take(7);
+        var enumerable = Enumerable.Range(0, 8).OrderBy(x => Guid.NewGuid()).Take(8);
         var items = enumerable.ToArray();
 
         m_MyArea.CleanPyramidArea();
-
         m_AgentRb.velocity = Vector3.zero;
         m_MyArea.PlaceObject(gameObject, items[0]);
         transform.rotation = Quaternion.Euler(new Vector3(0f, Random.Range(0, 360)));
 
         m_SwitchLogic.ResetSwitch(items[1], items[2]);
-        ClearPoint();
+        path.Clear();
 
     }
 
@@ -226,47 +188,40 @@ public class PyramidAgent : Agent
 
         if (collision.gameObject.CompareTag("goal"))
         {
-            AddReward(2f);
-            goalPaths.AddPath(Points);
+            SetReward(2f);
+            //if (record)
+            //{
+            //    goals.lines.Add(path);
+            //    goals.Save();
+            //}
+            
             EndEpisode();
         }
         
         if (collision.gameObject.CompareTag("switchOff"))
         {
-            AddReward(1f);
+            SetReward(1f);
         }
 
         if (collision.gameObject.CompareTag("bound"))
         {
-            boundPaths.AddPath(Points);
+            if (record)
+            {
+                bounds.lines.Add(path);
+                bounds.Save();
+            }
+            
             EndEpisode();
         }
     }
 
     public bool DoGroundCheck()
     {
-        //RaycastHit hit;
-        //Physics.Raycast(transform.position + new Vector3(0, -0.05f, 0), -Vector3.up, out hit,
-        //    1f);
-
-        //if (hit.collider != null &&
-        //    (hit.collider.CompareTag("walkableSurface") ||
-        //     hit.collider.CompareTag("block") ||
-        //     hit.collider.CompareTag("wall") ||
-        //     hit.collider.CompareTag("stone") ||
-        //     hit.collider.CompareTag("ground"))
-        //    && hit.normal.y > 0.95f)
-        //{
-        //    return true;
-        //}
-
-        //return false;
-
         hitGroundColliders = new Collider[5];
         var o = gameObject;
         Physics.OverlapBoxNonAlloc(
-            o.transform.position + new Vector3(0, -0.05f, 0),
-            new Vector3(0.95f / 2f, 0.5f, 0.95f / 2f),
+            o.transform.position + new Vector3(0, -0.05f * 0.25f, 0),
+            new Vector3(0.95f / 2f * 2f, 0.5f * 2.5f, 0.95f / 2f * 2f),
             hitGroundColliders,
             o.transform.rotation);
         var grounded = false;
@@ -275,7 +230,7 @@ public class PyramidAgent : Agent
             if (col != null && col.transform != transform &&
                 (col.CompareTag("elevator") ||
                  col.CompareTag("ground") ||
-                 col.CompareTag("walkable")))
+                 col.CompareTag("stone")))
             {
                 grounded = true; //then we're grounded
                 break;

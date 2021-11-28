@@ -44,12 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14ced6fd5071c9f4b919f38f2065ffc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  points:
-  - {x: 0, y: 0, z: 1}
-  - {x: 0, y: 1, z: 2}
-  - {x: 0, y: 3, z: 4}
-  - {x: 4, y: 0, z: 6}
-  - {x: 0, y: 0, z: 4}
+  points: []
   lineColor: {r: 1, g: 0, b: 0, a: 0}
   startSphere: {fileID: 7800327305520088523, guid: e083a15b730b0e64fbc950648a6b79f5, type: 3}
   endSphere: {fileID: 7800327305520088523, guid: 290464772d30d0c4ca1abed2cd91cce1, type: 3}

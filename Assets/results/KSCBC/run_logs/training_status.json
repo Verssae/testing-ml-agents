@@ -1,0 +1,65 @@
+{
+    "KSC_BC": {
+        "checkpoints": [
+            {
+                "steps": 3499911,
+                "file_path": "results\\KSCBC\\KSC_BC\\KSC_BC-3499911.onnx",
+                "reward": -0.9992500692605972,
+                "creation_time": 1638008330.0805717,
+                "auxillary_file_paths": [
+                    "results\\KSCBC\\KSC_BC\\KSC_BC-3499911.pt"
+                ]
+            },
+            {
+                "steps": 3999922,
+                "file_path": "results\\KSCBC\\KSC_BC\\KSC_BC-3999922.onnx",
+                "reward": 1.4399999231100082,
+                "creation_time": 1638009340.3761737,
+                "auxillary_file_paths": [
+                    "results\\KSCBC\\KSC_BC\\KSC_BC-3999922.pt"
+                ]
+            },
+            {
+                "steps": 4499997,
+                "file_path": "results\\KSCBC\\KSC_BC\\KSC_BC-4499997.onnx",
+                "reward": -0.9995000716298819,
+                "creation_time": 1638010366.3292267,
+                "auxillary_file_paths": [
+                    "results\\KSCBC\\KSC_BC\\KSC_BC-4499997.pt"
+                ]
+            },
+            {
+                "steps": 4999951,
+                "file_path": "results\\KSCBC\\KSC_BC\\KSC_BC-4999951.onnx",
+                "reward": null,
+                "creation_time": 1638011481.4220076,
+                "auxillary_file_paths": [
+                    "results\\KSCBC\\KSC_BC\\KSC_BC-4999951.pt"
+                ]
+            },
+            {
+                "steps": 5496823,
+                "file_path": "results\\KSCBC\\KSC_BC\\KSC_BC-5496823.onnx",
+                "reward": 0.11474993079900742,
+                "creation_time": 1638012680.3328476,
+                "auxillary_file_paths": [
+                    "results\\KSCBC\\KSC_BC\\KSC_BC-5496823.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 5496823,
+            "file_path": "results\\KSCBC\\KSC_BC.onnx",
+            "reward": 0.11474993079900742,
+            "creation_time": 1638012680.3328476,
+            "auxillary_file_paths": [
+                "results\\KSCBC\\KSC_BC\\KSC_BC-5496823.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.27.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}

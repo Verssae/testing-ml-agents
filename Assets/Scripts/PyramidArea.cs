@@ -27,7 +27,7 @@ public class PyramidArea : Area
         var xRange = spawnTransform.localScale.x / 2.1f;
         var zRange = spawnTransform.localScale.z / 2.1f;
 
-        objectToPlace.transform.position = new Vector3(Random.Range(-xRange, xRange), 2f, Random.Range(-zRange, zRange))
+        objectToPlace.transform.position = new Vector3(Random.Range(-xRange, xRange), 3f, Random.Range(-zRange, zRange))
             + spawnTransform.position;
     }
 

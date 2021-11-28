@@ -1,6 +1,8 @@
 using UnityEngine;
+using System.Collections;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
+using System.Collections.Generic;
 
 public static class FileManager
 {
@@ -28,8 +30,9 @@ public static class FileManager
         }
         else
         {
-            Debug.LogError("Save file not found in " + path);
-            return null;
+            Debug.LogWarning("Save file not found in " + path);
+            SavePaths(new List<float[][]>().ToArray(), tag);
+            return LoadPaths(tag);
         }
     }
 }

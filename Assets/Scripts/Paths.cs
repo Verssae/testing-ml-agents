@@ -53,10 +53,12 @@ public class Paths : MonoBehaviour
 
     private void Start()
     {
+        Load();
+        Debug.Log(trajectories.Count);
         if (isTest && showAll)
         {
-            Load();
-            Debug.Log(trajectories.Count);
+            
+            
             for (int i = 0; i < trajectories.Count; i++)
             {
                 DrawLines(i);
@@ -65,31 +67,34 @@ public class Paths : MonoBehaviour
         }
         else if (isTest && !showAll)
         {
-            DrawLines(index);
+            DrawLines(Index);
         }
     }
 
 
     public void AddPath(float[][] path)
     {
-        paths.Add(path);
+        
         if (!isTest)
         {
-            Save();
+            paths.Add(path);
+            if (paths.Count % 5 == 0)
+            {
+                Save();
+            }
         }
     }
 
     public void Save()
     {
-        if (!isTest)
-        {
-            FileManager.SavePaths(Data, tg);
-        }
+        Debug.Log($"{tg}: {Data.Length}");
+        FileManager.SavePaths(Data, tg);
         
     }
 
     public void Load()
     {
+        paths = FileManager.LoadPaths(tg).ToList();
         trajectories = FileManager.LoadPaths(tg).Select(traj => new Trajectory(traj.Select(pt => new Vector3(pt[0], pt[1], pt[2])).ToList())).ToList();
     }
 
@@ -97,8 +102,11 @@ public class Paths : MonoBehaviour
     {
         var instanceLiner = Instantiate(liner);
         var linePath = instanceLiner.GetComponent<LinePath>();
-        linePath.points = trajectories[index].path;
-        linePath.Show();
+        if (trajectories.Count > 0)
+        {
+            linePath.points = trajectories[index].path;
+            linePath.Show();
+        }
     }
 
 }
