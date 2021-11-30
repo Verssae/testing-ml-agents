@@ -27,8 +27,8 @@ behaviors:
       gail:
         strength: 0.01
         gamma: 0.99
-        demo_path: Demos/Play.demo
+        demo_path: Demos/DemoPlay.demo
     behavioral_cloning:
-      demo_path: Demos/Play.demo
+      demo_path: Demos/DemoPlay.demo
       strength: 0.5
       steps: 150000

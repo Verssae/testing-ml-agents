@@ -1,0 +1,47 @@
+{
+    "GAIL_BC": {
+        "checkpoints": [
+            {
+                "steps": 499958,
+                "file_path": "results\\GAIL_BC\\GAIL_BC\\GAIL_BC-499958.onnx",
+                "reward": -0.999625070951879,
+                "creation_time": 1638115007.5422683,
+                "auxillary_file_paths": [
+                    "results\\GAIL_BC\\GAIL_BC\\GAIL_BC-499958.pt"
+                ]
+            },
+            {
+                "steps": 999929,
+                "file_path": "results\\GAIL_BC\\GAIL_BC\\GAIL_BC-999929.onnx",
+                "reward": 1.5174999088048935,
+                "creation_time": 1638115963.0250404,
+                "auxillary_file_paths": [
+                    "results\\GAIL_BC\\GAIL_BC\\GAIL_BC-999929.pt"
+                ]
+            },
+            {
+                "steps": 1412541,
+                "file_path": "results\\GAIL_BC\\GAIL_BC\\GAIL_BC-1412541.onnx",
+                "reward": null,
+                "creation_time": 1638116750.478965,
+                "auxillary_file_paths": [
+                    "results\\GAIL_BC\\GAIL_BC\\GAIL_BC-1412541.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 1412541,
+            "file_path": "results\\GAIL_BC\\GAIL_BC.onnx",
+            "reward": null,
+            "creation_time": 1638116750.478965,
+            "auxillary_file_paths": [
+                "results\\GAIL_BC\\GAIL_BC\\GAIL_BC-1412541.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.27.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}

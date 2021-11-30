@@ -1156,5 +1156,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Record: 1
   NumStepsToRecord: 0
-  DemonstrationName: DemoPlay
+  DemonstrationName: TestPlay
   DemonstrationDirectory: Assets/Demos

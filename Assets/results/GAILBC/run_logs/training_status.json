@@ -1,0 +1,65 @@
+{
+    "GAIL_BC": {
+        "checkpoints": [
+            {
+                "steps": 8499963,
+                "file_path": "results\\GAILBC\\GAIL_BC\\GAIL_BC-8499963.onnx",
+                "reward": -0.9997500702738762,
+                "creation_time": 1638132482.6874766,
+                "auxillary_file_paths": [
+                    "results\\GAILBC\\GAIL_BC\\GAIL_BC-8499963.pt"
+                ]
+            },
+            {
+                "steps": 8999997,
+                "file_path": "results\\GAILBC\\GAIL_BC\\GAIL_BC-8999997.onnx",
+                "reward": null,
+                "creation_time": 1638133378.9828918,
+                "auxillary_file_paths": [
+                    "results\\GAILBC\\GAIL_BC\\GAIL_BC-8999997.pt"
+                ]
+            },
+            {
+                "steps": 9499880,
+                "file_path": "results\\GAILBC\\GAIL_BC\\GAIL_BC-9499880.onnx",
+                "reward": -0.2845000500480334,
+                "creation_time": 1638134274.183306,
+                "auxillary_file_paths": [
+                    "results\\GAILBC\\GAIL_BC\\GAIL_BC-9499880.pt"
+                ]
+            },
+            {
+                "steps": 9999885,
+                "file_path": "results\\GAILBC\\GAIL_BC\\GAIL_BC-9999885.onnx",
+                "reward": null,
+                "creation_time": 1638135170.0214446,
+                "auxillary_file_paths": [
+                    "results\\GAILBC\\GAIL_BC\\GAIL_BC-9999885.pt"
+                ]
+            },
+            {
+                "steps": 10000013,
+                "file_path": "results\\GAILBC\\GAIL_BC\\GAIL_BC-10000013.onnx",
+                "reward": null,
+                "creation_time": 1638135170.1264179,
+                "auxillary_file_paths": [
+                    "results\\GAILBC\\GAIL_BC\\GAIL_BC-10000013.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 10000013,
+            "file_path": "results\\GAILBC\\GAIL_BC.onnx",
+            "reward": null,
+            "creation_time": 1638135170.1264179,
+            "auxillary_file_paths": [
+                "results\\GAILBC\\GAIL_BC\\GAIL_BC-10000013.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.27.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}

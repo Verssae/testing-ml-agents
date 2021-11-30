@@ -1,0 +1,65 @@
+{
+    "Curiosity": {
+        "checkpoints": [
+            {
+                "steps": 8499892,
+                "file_path": "results\\Curiosity\\Curiosity\\Curiosity-8499892.onnx",
+                "reward": null,
+                "creation_time": 1638241337.1318529,
+                "auxillary_file_paths": [
+                    "results\\Curiosity\\Curiosity\\Curiosity-8499892.pt"
+                ]
+            },
+            {
+                "steps": 8999966,
+                "file_path": "results\\Curiosity\\Curiosity\\Curiosity-8999966.onnx",
+                "reward": -0.46815002970397473,
+                "creation_time": 1638241972.6368778,
+                "auxillary_file_paths": [
+                    "results\\Curiosity\\Curiosity\\Curiosity-8999966.pt"
+                ]
+            },
+            {
+                "steps": 9499982,
+                "file_path": "results\\Curiosity\\Curiosity\\Curiosity-9499982.onnx",
+                "reward": -0.2616250105202198,
+                "creation_time": 1638242607.0089338,
+                "auxillary_file_paths": [
+                    "results\\Curiosity\\Curiosity\\Curiosity-9499982.pt"
+                ]
+            },
+            {
+                "steps": 9999999,
+                "file_path": "results\\Curiosity\\Curiosity\\Curiosity-9999999.onnx",
+                "reward": -0.45625003054738045,
+                "creation_time": 1638243238.455525,
+                "auxillary_file_paths": [
+                    "results\\Curiosity\\Curiosity\\Curiosity-9999999.pt"
+                ]
+            },
+            {
+                "steps": 10000127,
+                "file_path": "results\\Curiosity\\Curiosity\\Curiosity-10000127.onnx",
+                "reward": -0.45625003054738045,
+                "creation_time": 1638243238.5515237,
+                "auxillary_file_paths": [
+                    "results\\Curiosity\\Curiosity\\Curiosity-10000127.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 10000127,
+            "file_path": "results\\Curiosity\\Curiosity.onnx",
+            "reward": -0.45625003054738045,
+            "creation_time": 1638243238.5515237,
+            "auxillary_file_paths": [
+                "results\\Curiosity\\Curiosity\\Curiosity-10000127.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.27.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}
